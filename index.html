@@ -1,40 +1,32 @@
-<!DOCTYPE html>
-<html lang="de">
+<html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="referrer" content="origin">
-<link rel="canonical" href="http://gsd-projekte.ga//">
-<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<title>Index</title>
-<link rel="stylesheet" type="text/css" href="css/site.20181123201410.css">
-<!--[if lte IE 7]>
-<link rel="stylesheet" type="text/css" href="css/site.20181123201410-lteIE7.css">
-<![endif]-->
+
 </head>
-<body id="body">
-<div class="pos vis section">
-<div class="vis-2 pos-2 size cont">
-<div class="vis-3 pos-3 size-2 cont-2">
-<p class="para"><span class="font">Projekt-Woche</span></p>
-</div>
-</div>
-<div class="vis-3 pos-4 size-3 cont-3">
-<p class="para"><span class="font-2">Schul-Code eingeben</span></p>
-</div>
-<div class="vis-2 pos-5 size-4 cont-4">
-<input class="input" placeholder="    Schul-Code" type="text" name="text" required>
-</div>
-<div class="vis-2 pos-6 size-5 cont-5">
-<span class="button vis-4 pos-7 size-6 font-3">
-Abschicken
-</span>
-</div>
-</div>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/h5validate.js"></script>
-<script type="text/javascript" src="js/index.20181123201410.js"></script>
-<script type="text/javascript">
-var ver=RegExp(/Mozilla\/5\.0 \(Linux; .; Android ([\d.]+)/).exec(navigator.userAgent);if(ver&&parseFloat(ver[1])<5){document.getElementsByTagName('body')[0].className+=' whitespacefix';}
-</script>
+
+<body>
+
+<h1>Projekt Woche</h1>
+<form>
+        <label for="class-code">Klassen-Code: </label>
+        <input type="password" id="class-code" name="class-code">
+</form>
+
+<?php 
+
+$cc = $_GET['class-code'];
+
+if ($cc == "3237") {
+    echo "Have a good day!";
+} else {
+    echo "Have a good night!";
+}
+
+?>
+
+
+
+
 </body>
+
 </html>
